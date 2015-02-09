@@ -1,0 +1,19 @@
+{
+  "name": "blog.sgtpooki.com",
+  "version": "0.0.1",
+  "description": "The blog website for sgtpooki.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Russell Dempsey <SgtPooki@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "handlebars": "^2.0.0",
+    "metalsmith": "^1.3.0",
+    "metalsmith-templates": "^0.6.0"
+  },
+  "devDependencies": {
+    "metalsmith-markdown": "^0.2.1"
+  }
+}
