@@ -1,6 +1,6 @@
 ---
 title: "First Post"
-date: 2014-04-18
+date: 2015-02-09
 template: post.hbt
 ---
 This is an amazing blogpost!

@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js && http-server build -p 80 -a localhost -o -c-1"
+    "metal": "node index.js",
+    "start": "npm run metal && http-server build -p 80 -a localhost -o -c-1"
   },
   "author": "Russell Dempsey <SgtPooki@gmail.com>",
   "license": "MIT",
@@ -15,6 +16,7 @@
     "metalsmith-templates": "0.6.0"
   },
   "devDependencies": {
+    "http-server": "0.7.4",
     "metalsmith-markdown": "0.2.1"
   }
 }
