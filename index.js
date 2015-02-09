@@ -4,13 +4,7 @@ var templates   = require('metalsmith-templates');
 var collections = require('metalsmith-collections');
 var permalinks  = require('metalsmith-permalinks');
 
-//require('./config/partials.js');
-var Handlebars  = require('handlebars'),
-    fs          = require('fs');
-
-
-Handlebars.registerPartial('header', fs.readFileSync(__dirname + '/templates/partials/header.hbt').toString());
-Handlebars.registerPartial('footer', fs.readFileSync(__dirname + '/templates/partials/footer.hbt').toString());
+require('./custom/partials');
 
 var metalias = MetalSmith(__dirname); //all paths are relative to __dirname (or whatever you pass here)
 
