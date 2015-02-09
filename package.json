@@ -1,7 +1,7 @@
 {
-  "name": "blog.sgtpooki.com",
-  "version": "0.0.1",
-  "description": "The blog website for sgtpooki.com",
+  "name": "metalsmith-demo",
+  "version": "0.0.2",
+  "description": "A Simple demo for MetalSmith",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
