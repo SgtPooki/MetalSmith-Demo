@@ -26,3 +26,24 @@ cd destinationDirectory
 npm install
 node index
 ```
+
+## What now? (after installation...)
+
+First off, if you have not received any errors, you used the [installation commands above](#installation), and you have a projectRoot/build/index.html file, then our work here is done.
+
+However, if you're concerned about your local harddrive retaining all of the beauty within this repo and want to share with the world, 
+you should probably find a server. Just a few options off the top of my head:
+
+- Node.js with connect
+- Node.js with express
+- Apache
+- nginx
+- SimpleHTTPServer
+- http-server
+
+If you're lost, 
+- please feel free to google more about the above options, 
+- email me with details about how you would like to bestow scrupulous funding for my assistance
+- or file an issue/question so I can address the cause of the [installation commands above](#installation) not correctly installing this project for you.
+
+Pursue Truth; Share Knowledge; And have fun programming! :thumbsup:
