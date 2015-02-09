@@ -17,6 +17,23 @@ With that said, I ran into a few issues during setup and the tutorial for [part 
 was outdated. I am just starting to toy around with MetalSmith, but I figured I would create this as a starter project to help myself, 
 and others like me, to Metal with care.
 
+### Issues I ran into with Robin's tutorials
+
+- Part 1
+    1. the MetalSmith.build() method must be passed an error and/or success callback (_this is up to date on the main MetalSmith README.md_).
+    2. 
+- Part 2
+    1. After completing adding of all of the instructions from Part 2, the build failed. I was missing a post.hbt file (_There is a subtext in Part2 mentioning that you need to also create a post template that I missed while blindly following the large-text instructions._)
+    2. The index.md no longer builds to an index.html.. leaving only a directory listing when serving the build directory.
+    3. The blog/index.html page was displaying [incorrectly escaped content for posts due to using double, instead of triple, curly brackets](http://handlebarsjs.com/#html-escaping). 
+- Part 3
+    1. TBD
+
+### Observed issues with MetalSmith
+
+1. Why U No Error when build fails? Why you DO success? If a success function is passed to .build(), it fires during the failed builds mentioned above. This is quite confusing.
+
+
 ## Dependencies
 
 1. git
