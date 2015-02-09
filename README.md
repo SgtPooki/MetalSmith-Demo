@@ -24,9 +24,8 @@ and others like me, to Metal with care.
 
 - Part 2
     1. After completing adding of all of the instructions from Part 2, the build failed. I was missing a post.hbt file (_There is a subtext in Part2 mentioning that you need to also create a post template that I missed while blindly following the large-text instructions._)
-    2. Another wall for building is that according to the tutorial, the page.hbt template should have the header and footer templates in it, but with 
-    3. The index.md no longer builds to an index.html.. leaving only a directory listing when serving the build directory.
-    4. The blog/index.html page was displaying [incorrectly escaped content for posts due to using double, instead of triple, curly brackets](http://handlebarsjs.com/#html-escaping). 
+    2. The index.md no longer builds to an index.html.. leaving only a directory listing when serving the build directory.
+    3. The blog/index.html page was displaying [incorrectly escaped content for posts due to using double, instead of triple, curly brackets](http://handlebarsjs.com/#html-escaping). 
 
 - Part 3
     1. TBD
