@@ -4,17 +4,17 @@ Metal with care
 
 # MetalSmith-Demo
 
-A working static site generator using [MetalSmith](https://github.com/segmentio/metalsmith). 
+A working static site generator using [MetalSmith](https://github.com/segmentio/metalsmith).
 
 ## Why does this repo exist?
 
-I was able to ramp up quickly thanks to [Robin Thrift](https://github.com/RobinThrift)'s getting-to-know-metalsmith series. 
+I was able to ramp up quickly thanks to [Robin Thrift](https://github.com/RobinThrift)'s getting-to-know-metalsmith series.
 
-A lot of credit for this repo is owed to [Robin Thrift](https://github.com/RobinThrift) who created the tutorials I followed and 
+A lot of credit for this repo is owed to [Robin Thrift](https://github.com/RobinThrift) who created the tutorials I followed and
 created the original MetalSmith-Demo, though under a different name: [metalsmith-tutorial](https://github.com/RobinThrift/metalsmith-tutorial)
 
-With that said, I ran into a few issues during setup and the tutorial for [part 1 (from April 2014)](http://www.robinthrift.com/posts/metalsmith-part-1-setting-up-the-forge/) 
-was outdated. I am just starting to toy around with MetalSmith, but I figured I would create this as a starter project to help myself, 
+With that said, I ran into a few issues during setup and the tutorial for [part 1 (from April 2014)](http://www.robinthrift.com/posts/metalsmith-part-1-setting-up-the-forge/)
+was outdated. I am just starting to toy around with MetalSmith, but I figured I would create this as a starter project to help myself,
 and others like me, to Metal with care.
 
 ### Issues I ran into with Robin's tutorials
@@ -25,10 +25,10 @@ and others like me, to Metal with care.
 - Part 2
     1. After completing adding of all of the instructions from Part 2, the build failed. I was missing a post.hbt file (_There is a subtext in Part2 mentioning that you need to also create a post template that I missed while blindly following the large-text instructions._)
     2. The index.md no longer builds to an index.html.. leaving only a directory listing when serving the build directory.
-    3. The blog/index.html page was displaying [incorrectly escaped content for posts due to using double, instead of triple, curly brackets](http://handlebarsjs.com/#html-escaping). 
+    3. The blog/index.html page was displaying [incorrectly escaped content for posts due to using double, instead of triple, curly brackets](http://handlebarsjs.com/#html-escaping).
 
 - Part 3
-    1. TBD
+    1. No real issues
 
 ### Observed issues with MetalSmith
 
@@ -60,7 +60,7 @@ npm start # Calls' npm run metal' and then http-server to serve the files.
 
 ## Future
 
-### This project needs us to 
+### This project needs us to
 
 - Create a [slush generator](http://thejackalofjavascript.com/building-slush-generator/).
 - Create a [yo generator](http://yeoman.io/authoring/).
@@ -80,18 +80,18 @@ Just a few other options off the top of my head:
 
 ### What now? (after installation...)
 
-if, 
+if,
 - you have not received any errors
 - you used the [installation commands above](#installation)
 - you have a projectRoot/build/pages/about/index.html and similar files
-- You can serve those files with ```npm start``` 
+- You can serve those files with ```npm start```
 
 , then our work here is done. If not.. please see below.
 
 
 ## But.. but...
 
-If you're lost, 
+If you're lost,
 - please feel free to spend some time googling.
 - email me with details about how you would like to bestow scrupulous funding upon me for my assistance.
 - file an issue/question so I can address the cause of the [installation commands above](#installation) not correctly installing this project for you.
