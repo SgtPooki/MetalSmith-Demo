@@ -17,6 +17,8 @@
   },
   "devDependencies": {
     "http-server": "0.7.4",
-    "metalsmith-markdown": "0.2.1"
+    "metalsmith-coffee": "0.0.2",
+    "metalsmith-markdown": "0.2.1",
+    "metalsmith-sass": "^0.6.1"
   }
 }
