@@ -3,6 +3,7 @@
 Metal with care
 
 [![Stories in Ready](https://badge.waffle.io/sgtpooki/metalsmith-demo.svg?label=ready&title=Ready)](http://waffle.io/sgtpooki/metalsmith-demo)
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/SgtPooki/metalsmith-demo/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
 # MetalSmith-Demo
 
