@@ -2,6 +2,7 @@
 
 Metal with care
 
+[![Code Climate](https://codeclimate.com/github/SgtPooki/MetalSmith-Demo/badges/gpa.svg)](https://codeclimate.com/github/SgtPooki/MetalSmith-Demo)
 [![Stories in Ready](https://badge.waffle.io/sgtpooki/metalsmith-demo.svg?label=ready&title=Ready)](http://waffle.io/sgtpooki/metalsmith-demo)
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/SgtPooki/metalsmith-demo/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
