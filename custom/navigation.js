@@ -89,7 +89,6 @@ module.exports = function navigation(config, settings) {
 
     config = config || navConfigs;
     settings = settings || navSettings;
-    console.log(config, settings);
     nav = metalNav(config, settings);
      
     return nav;

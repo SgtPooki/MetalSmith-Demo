@@ -4,9 +4,7 @@ var templates   = require('metalsmith-templates');
 var collections = require('metalsmith-collections');
 var permalinks  = require('metalsmith-permalinks');
 var sass = require('metalsmith-sass');
-var coffee = require('metalsmith-coffee');
 var navigation = require('./custom/navigation');
-var metadata = require('metalsmith-metadata');
 
 var metalias = MetalSmith(__dirname); //all paths are relative to __dirname (or whatever you pass here)
 
@@ -59,8 +57,6 @@ metalias
     .use(sass({
         outputStyle: 'compressed'
     }))
-
-    .use(coffee())
 
     .use(markdown())
 
