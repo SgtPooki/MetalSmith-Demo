@@ -1,4 +1,4 @@
-var MetalSmith = require('metalsmith');
+var metalSmith = require('metalsmith');
 var markdown   = require('metalsmith-markdown');
 var templates   = require('metalsmith-templates');
 var collections = require('metalsmith-collections');
@@ -6,7 +6,7 @@ var permalinks  = require('metalsmith-permalinks');
 var sass = require('metalsmith-sass');
 var navigation = require('./custom/navigation');
 
-var metalias = MetalSmith(__dirname); //all paths are relative to __dirname (or whatever you pass here)
+var metalias = metalSmith(__dirname); //all paths are relative to __dirname (or whatever you pass here)
 
 var buildSuccess = function buildSuccess(err) {
     console.log('Site built successfully...', err);
