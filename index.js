@@ -5,32 +5,30 @@ var collections = require('metalsmith-collections');
 var permalinks  = require('metalsmith-permalinks');
 var sass = require('metalsmith-sass');
 var coffee = require('metalsmith-coffee');
-
-require('./custom/partials');
+var navigation = require('./custom/navigation');
+var metadata = require('metalsmith-metadata');
 
 var metalias = MetalSmith(__dirname); //all paths are relative to __dirname (or whatever you pass here)
 
-var buildSuccess = function buildSuccess() {
-    console.log('Site built successfully...');
+var buildSuccess = function buildSuccess(err) {
+    console.log('Site built successfully...', err);
 };
 var buildFail = function buildFail(err) {
     console.log('Error: ', err);
 };
 
-var findTemplate = function(config) {
-    var pattern = new RegExp(config.pattern);
+var meta = {
+    title: 'MetalSmith-Demo',
+    description: 'Metal with care.',
+    // used by metalsmith-templates
+    partials: {
+        breadcrumbs: 'partials/breadcrumbs',
 
-    return function(files, metalsmith, done) {
-        for (var file in files) {
-            if (pattern.test(file)) {
-                var _f = files[file];
-                if (!_f.template) {
-                    _f.template = config.templateName;
-                }
-            }
-        }
-        done();
-    };
+        header : 'partials/header',
+        footer : 'partials/footer',
+        navigation : 'partials/navigation',
+        navigationItem : 'partials/navigationItem'
+    }
 };
 
 //As far as I can tell, the only order that matters is that the .build(fnE, fnS) method is called last.
@@ -45,7 +43,6 @@ metalias
     // MetalSmith's default destination is the build directory
     .destination('./build')
 
-    //plugins
     .use(collections({
         pages: {
             pattern: 'content/pages/*.md'
@@ -57,10 +54,7 @@ metalias
         }
     }))
 
-    .use(findTemplate({
-        pattern: 'posts',
-        templateName: 'post.hbt'
-    }))
+    .metadata(meta)
 
     .use(sass({
         outputStyle: 'compressed'
@@ -74,7 +68,11 @@ metalias
         pattern: ':collection/:title'
     }))
 
-    .use(templates('handlebars'))
+    //.use(permalinks())
+
+    .use(navigation())
+
+    .use(templates('swig'))
 
 
     // the build method must be passed at least callback function to succeed. Without these functions, no error is thrown and it's very annoying.
