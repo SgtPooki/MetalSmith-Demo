@@ -2,6 +2,8 @@
 
 Metal with care
 
+[![Stories in Ready](https://badge.waffle.io/sgtpooki/metalsmith-demo.svg?label=ready&title=Ready)](http://waffle.io/sgtpooki/metalsmith-demo)
+
 # MetalSmith-Demo
 
 A working static site generator using [MetalSmith](https://github.com/segmentio/metalsmith).
