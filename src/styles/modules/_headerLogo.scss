@@ -1,0 +1,19 @@
+
+.headerLogo {
+
+    box-sizing: border-box;
+    padding: $defaultGutter $tightGutter; 
+
+    &-link {
+
+        &:visited {
+            color:  $accent;
+        }
+
+        > &-text {
+            font-size:      $titleFontSize;
+            color:          $primaryBlue;
+            font-family:    'PT Sans', sans-serif;
+        }
+    }
+}

@@ -1,5 +1,7 @@
 <header>
-    <h1 class="logo">
-        <a href="/">Metalsmith Test Site</a>
-    </h1>
+    <div class="headerLogo">
+        <a class="headerLogo-link" href="/">
+            <span class="headerLogo-text">Metalsmith-Demo: Metal with care.</span>
+        </a>
+    </div>
 </header>

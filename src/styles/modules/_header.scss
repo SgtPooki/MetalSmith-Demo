@@ -1,0 +1,23 @@
+header {
+    width: 100%;
+    text-align: center;
+    font-size: $titleFontSize;
+    background: $secondaryBackground;
+    color: $primaryBlue;
+    font-family: 'PT Sans', sans-serif;
+    top: 0;
+
+    &.sticky {
+        font-size: 24px;
+        line-height: 48px;
+        height: 48px;
+        background: #efc47D;
+        text-align: left;
+        padding-left: 20px;
+    }
+    
+    &:visited {
+        color: $accent;
+
+    }
+}
