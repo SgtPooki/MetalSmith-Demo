@@ -1,4 +1,4 @@
-<ol class="breadcrumb">
+<ol class="breadcrumb col span_12">
     <li>
         <a href="/">Home</a>
     </li>

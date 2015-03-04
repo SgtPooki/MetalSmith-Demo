@@ -1,0 +1,13 @@
+.navMenu {
+	@extend .menu;
+	@extend .col;
+	@extend .span_6;
+
+  	@extend %vertical-align;
+
+	//height: $headerHeight - ($defaultGutter * 2);
+
+	.menuItem-label {
+		font-size: $semiImportantFontSize;
+	}
+}

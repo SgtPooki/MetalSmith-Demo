@@ -2,16 +2,17 @@
 // Reset
 @import "vendor/normalize";
 
+
 // Variables
 @import "variables/all";
 
 //Base
 @import "partials/base";
 
+// Third party styles
+@import "vendor/gridpak/gridpak";
+
 // Modules and objects
 @import "modules/all";
 
 // Partials, helpers, and mixins
-
-// Third party styles
-@import "vendor/gridpak/gridpak";
