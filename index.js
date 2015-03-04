@@ -55,7 +55,7 @@ metalias
     .metadata(meta)
 
     .use(sass({
-        outputStyle: 'compressed'
+        outputStyle: 'expanded'
     }))
 
     .use(markdown())
