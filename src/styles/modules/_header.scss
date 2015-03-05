@@ -1,12 +1,12 @@
 header {
 	background-color: $primaryBackground2;
 	height: $headerHeight;
-	padding: $defaultGutter $tightGutter;
 	font-size: $titleFontSize;
 }
 
 .headerTitle {
-	@extend %vertical-align;
+	height: $headerHeight;
+	line-height: $headerHeight;
 }
 
 .headerTitle-link {

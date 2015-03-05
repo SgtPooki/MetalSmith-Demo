@@ -11,10 +11,11 @@
                 <span class="menuItem-label">{{ nav.name }}</span>
                 <ul class="menu">        
                     {% for child in nav.children %}
-                        {% include "./navigationItem.swg" with {nav: child} only %}
+                        {% include "./navigationItem.swg" with {nav: child, count: nav.children.length || 1} only %}
                     {% endfor %}
                 </ul>
             </div>
         {% endif %}
     {% endif %}
 </li>
+
