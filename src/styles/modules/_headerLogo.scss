@@ -1,0 +1,19 @@
+
+.headerLogo {
+
+    height: 100%;
+    width: 100%;
+
+    &-link {
+
+        &:visited {
+            color:  $accent;
+        }
+    }
+
+    &-text {
+        font-size:      $titleFontSize;
+        color:          $primaryBlue;
+        font-family:    'PT Sans', sans-serif;
+    }
+}

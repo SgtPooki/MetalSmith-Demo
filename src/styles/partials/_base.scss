@@ -1,0 +1,14 @@
+
+html, body {
+    background-color: $primaryBackground;
+}
+
+a {
+	text-decoration: none;
+
+	:visited {
+		color: $accent;
+	}
+}
+
+@import "verticalAlign";

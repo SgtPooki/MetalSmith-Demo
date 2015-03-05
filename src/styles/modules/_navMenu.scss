@@ -1,0 +1,41 @@
+$colorList: $primaryBlue, $secondaryBlue, $accent;
+
+.navMenu {
+	@extend .menu;
+
+	height: $headerHeight;
+
+	.menuItem {
+		height:100%;
+
+		&:hover .menuItem-background {
+			height: 50%;
+		}
+
+		.menuItem-label {
+			box-sizing: border-box;
+			font-size: $semiImportantFontSize;
+			font-size: 20px;
+			border-top: 10px solid $primaryBlue;
+			-webkit-transition: all 0.25s ease-in 0s;
+			transition: all 0.25s ease-in 0s;
+			position: relative;
+			display: block;
+			margin: 0 25px;
+		}
+
+		&:hover .menuItem-label {
+			border-top-width: $headerHeight - $semiImportantFontSize;
+		}
+	}
+	.menuItem:nth-child(even) {
+		.menuItem-label {
+			border-color: $secondaryBlue;
+		}
+	}
+	.menuItem:nth-child(3n+3) {
+		.menuItem-label {
+			border-color: $accent;
+		}
+	}
+}

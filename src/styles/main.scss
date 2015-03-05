@@ -1,8 +1,18 @@
-$textColor: #ffffff;
-$bgColor: #000000;
 
-* {
-    color: $textColor;
-    background-color: $bgColor;
-}
+// Reset
+@import "vendor/normalize";
 
+
+// Variables
+@import "variables/all";
+
+//Base
+@import "partials/base";
+
+// Third party styles
+@import "vendor/gridpak/gridpak";
+
+// Modules and objects
+@import "modules/all";
+
+// Partials, helpers, and mixins

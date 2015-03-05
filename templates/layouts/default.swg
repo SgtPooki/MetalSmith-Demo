@@ -12,9 +12,8 @@
     <body>
         {% include "../partials/header.swg" %}
 
-        <div class="main-wrapper">
-            {% include "../partials/breadcrumbs.swg" %}
-            {% include "../partials/navigation.swg" %}
+        {% include "../partials/breadcrumbs.swg" %}
+        <div class="main-wrapper row">
             {% autoescape false %}
                 {{ contents }}
             {% endautoescape %}

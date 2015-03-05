@@ -1,0 +1,19 @@
+header {
+	background-color: $primaryBackground2;
+	height: $headerHeight;
+	font-size: $titleFontSize;
+}
+
+.headerTitle {
+	height: $headerHeight;
+	line-height: $headerHeight;
+}
+
+.headerTitle-link {
+
+	display: block;
+	text-align: center;
+
+	.headerTitle-text {
+	}
+}
